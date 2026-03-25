@@ -76,7 +76,7 @@ The skill auto-detects language from your first message. All output — plan, no
 
 ## Background
 
-This skill is based on a workflow described in a reflective essay about using Claude as a learning tool. The key insight: the most valuable feature of an LLM as a learning tool is personalization. A course has a single syllabus for everyone, but Claude creates one tailored for you.
+This skill is based on a workflow described by [Jesús Fernández-Villaverde](https://x.com/JesusFerna7026/status/2036774895057592358) about using Claude as a personalized learning tool. The key insight: the most valuable feature of an LLM as a learning tool is personalization. A course has a single syllabus for everyone, but Claude creates one tailored for you.
 
 ## License
 
@@ -162,4 +162,4 @@ Skill, ilk mesajınızdan dili otomatik algılar. Tüm çıktılar — plan, not
 
 ## Arka plan
 
-Bu skill, Claude'u bir öğrenme aracı olarak kullanmayı anlatan bir denemeden doğdu. Temel içgörü: bir LLM'in öğrenme aracı olarak en değerli özelliği kişiselleştirmedir. Bir dersin herkese tek bir müfredatı vardır, ama Claude size özel bir müfredat oluşturur.
+Bu skill, [Jesús Fernández-Villaverde](https://x.com/JesusFerna7026/status/2036774895057592358)'nin Claude'u kişiselleştirilmiş bir öğrenme aracı olarak kullanmayı anlatan yazısından ilham alınarak oluşturuldu. Temel içgörü: bir LLM'in öğrenme aracı olarak en değerli özelliği kişiselleştirmedir. Bir dersin herkese tek bir müfredatı vardır, ama Claude size özel bir müfredat oluşturur.
