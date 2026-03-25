@@ -84,82 +84,82 @@ MIT
 
 ---
 
-# deep-study (Turkce)
+# deep-study (Türkçe)
 
-Claude'u kisisellestirilmis bir calisma arkadasina donusturen bir Claude Code skill'i. Arka planiniza gore herhangi bir dusunur, konu veya alan icin ozel bir calisma plani olusturur, okuma surecinize rehberlik eder ve interaktif bir tartisma partneri olarak calisir.
+Claude'u kişiselleştirilmiş bir çalışma arkadaşına dönüştüren bir Claude Code skill'i. Arka planınıza göre herhangi bir düşünür, konu veya alan için özel bir çalışma planı oluşturur, okuma sürecinize rehberlik eder ve interaktif bir tartışma partneri olarak çalışır.
 
 ## Ne yapar
 
-**Bu skill okumayi degistirmez.** Asil metinleri siz okursunuz. Claude planlar, baglantilar kurar ve tartisir.
+**Bu skill okumayı değiştirmez.** Asıl metinleri siz okursunuz. Claude planlar, bağlantılar kurar ve tartışır.
 
-Is akisi uc asamadan olusur:
+İş akışı üç aşamadan oluşur:
 
-### 1. Calisma Plani
+### 1. Çalışma Planı
 
-Claude, sunlara gore kisisellestirilmis bir calisma plani olusturur: arka planiniz, komsu alanlardaki bilginiz, hedefiniz ve ayirabilecginiz zaman.
+Claude, şunlara göre kişiselleştirilmiş bir çalışma planı oluşturur: arka planınız, komşu alanlardaki bilginiz, hedefiniz ve ayırabileceğiniz zaman.
 
-Plan; okuma sirasi, metin bazinda odak temalari, yeni materyali bildiginiz alanla baglayan **kopru sorulari** ve kavram eslemeleri icerir.
+Plan; okuma sırası, metin bazında odak temaları, yeni materyali bildiğiniz alanla bağlayan **köprü soruları** ve kavram eşlemeleri içerir.
 
-> **Ornek:** Goffman calisan bir ekonomist, "Goffman'in 'expressions given vs. given off' ayrimi Spence'in sinyalizasyon modelindeki kasitli sinyaller ve istemsiz bilgi sizintilari ayrimiyla nasil ortusur?" gibi kopru sorulari alir.
+> **Örnek:** Goffman çalışan bir ekonomist, "Goffman'ın 'expressions given vs. given off' ayrımı Spence'in sinyalizasyon modelindeki kasıtlı sinyaller ve istemsiz bilgi sızıntıları ayrımıyla nasıl örtüşür?" gibi köprü soruları alır.
 
-### 2. Okuma Eslikcisi
+### 2. Okuma Eşlikçisi
 
-Okurken Claude bilgili bir meslektas olarak calisir — hoca degil. Su turlerde destek alabilirsiniz:
+Okurken Claude bilgili bir meslektaş olarak çalışır — hoca değil. Şu türlerde destek alabilirsiniz:
 
-- Belirsiz argumanlarin **aciklanmasi**
-- Komsu literatur veya kendi alaninizla **baglanti**
-- **Formalizasyon** tartismasi (bu fikir modellenmi mi?)
-- Zayif argumanlarin **elestirisi**
-- Metinler arasi **sentez**
+- Belirsiz argümanların **açıklanması**
+- Komşu literatür veya kendi alanınızla **bağlantı**
+- **Formalizasyon** tartışması (bu fikir modellenmiş mi?)
+- Zayıf argümanların **eleştirisi**
+- Metinler arası **sentez**
 
-### 3. Notlar ve Sureklilik
+### 3. Notlar ve Süreklilik
 
-Temel cikarimlar, kopruler ve acik sorular `.md` dosyalarina kaydedilir. Birden fazla oturumda devam edebilirsiniz — Claude kaldiginiz yerden devam eder.
+Temel çıkarımlar, köprüler ve açık sorular `.md` dosyalarına kaydedilir. Birden fazla oturumda devam edebilirsiniz — Claude kaldığınız yerden devam eder.
 
 ## Kurulum
 
-`skill.md` dosyasini Claude Code skills dizininize kopyalayin:
+`skill.md` dosyasını Claude Code skills dizininize kopyalayın:
 
 ```bash
 mkdir -p ~/.claude/skills/deep-study
 cp skill.md ~/.claude/skills/deep-study/skill.md
 ```
 
-## Kullanim
+## Kullanım
 
 ```
 /deep-study Goffman
 /deep-study mimetik arzu, 2 saat, kaynak yok
-/deep-study              # tanimayla baslar
+/deep-study              # tanışmayla başlar
 ```
 
-Ya da Claude'a bir sey calismak istediginizi soyleyin:
+Ya da Claude'a bir şey çalışmak istediğinizi söyleyin:
 
 ```
-"Bir konu calismak istiyorum: fenomenoloji"
+"Bir konu çalışmak istiyorum: fenomenoloji"
 ```
 
 ### Komutlar
 
-| Komut | Islem |
+| Komut | İşlem |
 |-------|-------|
-| `plan` | Calisma planini goster |
-| `neredeyim` | Ilerleme ozeti |
-| `notlar` | Notlari goster/kaydet |
-| `bagla {kavram}` | Kavramini alanina bagla |
+| `plan` | Çalışma planını göster |
+| `neredeyim` | İlerleme özeti |
+| `notlar` | Notları göster/kaydet |
+| `bağla {kavram}` | Kavramını alanına bağla |
 | `kaydet` | Dosyaya kaydet |
-| `sonraki` | Siradaki okuma + briefing |
+| `sonraki` | Sıradaki okuma + briefing |
 
-## Kisisellesirme nasil calisir
+## Kişiselleştirme nasıl çalışır
 
-Skill, `reader_persona.md` dosyasini kontrol eder (Readwise verisinden [build-persona](https://github.com/orhoncan/build-persona) skill'i ile olusturulur). Varsa, okuma gecmisinizi ve entelektuel profilinizi kullanarak cok spesifik kopruler olusturur.
+Skill, `reader_persona.md` dosyasını kontrol eder (Readwise verisinden [build-persona](https://github.com/orhoncan/build-persona) skill'i ile oluşturulur). Varsa, okuma geçmişinizi ve entelektüel profilinizi kullanarak çok spesifik köprüler oluşturur.
 
-Persona yoksa Claude birkac arka plan sorusu sorar. Kopruler daha az spesifik olur ama yine kisisellestirilmistir.
+Persona yoksa Claude birkaç arka plan sorusu sorar. Köprüler daha az spesifik olur ama yine kişiselleştirilmiştir.
 
 ## Dil
 
-Skill, ilk mesajinizdan dili otomatik algilar. Tum ciktilar — plan, notlar, komutlar, konusma — dilinizi takip eder.
+Skill, ilk mesajınızdan dili otomatik algılar. Tüm çıktılar — plan, notlar, komutlar, konuşma — dilinizi takip eder.
 
 ## Arka plan
 
-Bu skill, Claude'u bir ogrenme araci olarak kullanmayi anlatan bir denemeden dogdu. Temel icgoru: bir LLM'in ogrenme araci olarak en degerli ozelligi kisisellesirmedir. Bir dersin herkese tek bir mufredati vardir, ama Claude size ozel bir mufredat olusturur.
+Bu skill, Claude'u bir öğrenme aracı olarak kullanmayı anlatan bir denemeden doğdu. Temel içgörü: bir LLM'in öğrenme aracı olarak en değerli özelliği kişiselleştirmedir. Bir dersin herkese tek bir müfredatı vardır, ama Claude size özel bir müfredat oluşturur.
